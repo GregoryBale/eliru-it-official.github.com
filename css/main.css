@@ -37,8 +37,7 @@ body {
  } 
  
 #sectionTwoResultsContainerItemFirstH1 { 
- font-family: ProximaNova;
- src: url(fonts/ProximaNova-Bold.ttf);
+ font-family: 'Roboto', medium;
  color: #4d5a88; 
  margin-left: 10px; 
  margin-right: 10px; 
