@@ -46,8 +46,7 @@ body {
  } 
  
 #sectionTwoResultsContainerItemFirstP { 
- font-family: ProximaNova;
- src: url(fonts/ProximaNova-Regular.ttf);
+ font-family: 'Roboto', thin;
  color: #4d5a88; 
  font-size: 20px; 
  padding-bottom: 10px; 
