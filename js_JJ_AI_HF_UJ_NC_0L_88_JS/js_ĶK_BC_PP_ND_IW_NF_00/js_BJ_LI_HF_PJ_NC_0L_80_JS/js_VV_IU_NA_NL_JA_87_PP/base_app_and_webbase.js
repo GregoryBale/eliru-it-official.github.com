@@ -1,17 +1,4 @@
-function cerca() {
-
-var a = document.getElementById("input").value;
-var b = a.replace(/["%","&","€","!","?","*","=","@","$"]/g,"");
-var c = b.replace(/ /g,"");
-var d = c.toLowerCase();
-
-var titolo = document.getElementById("titolo");
-
-var output = document.getElementById("output");
-
-condition=false;
-
-var paesi = [
+[
 {"text":"https://vk.com/id655718261","namefemale":"Никита Рудов","fact":"Пытается накрутить отзывы, чтобы скамить","number":"Не удалось найти","group":"Не удалось найти","vechnaya":"https://vk.com/id655718261"},
 {"text":"https://vk.com/id665118583","namefemale":"Влад Николаев","fact":"Попытка украсть учётную запись в игре.","number":"Не удалось найти","group":"Не удалось найти","vechnaya":"https://vk.com/id665118583"},
 {"text":"https://vk.com/gromov.myata","namefemale":"Тимофей Громов","fact":"Кидок - кинул на аккаунт.","number":"+79373989611","group":"Не удалось найти ","vechnaya":"https://vk.com/id622121934"},
@@ -563,36 +550,4 @@ var paesi = [
 {"text":"https://vk.com/id535432531","namefemale":"Артём Морозов","fact":"Кидок.","number":"+79671276784 ","group":"https://vk.com/public51091099","vechnaya":"https://vk.com/id535432531"}, 
 {"text":"https://vk.com/dimasafonov_garant","namefemale":"Дима Сафонов","fact":"Кидок - кинул на 125 р. (голда)","number":"Не удалось найти ","group":"Не удалось найти ","vechnaya":"https://vk.com/id411894834"},
 {"text":"https://vk.com/id411894834","namefemale":"Дима Сафонов","fact":"Кидок - кинул на 125 р. (голда)","number":"Не удалось найти ","group":"Не удалось найти ","vechnaya":"https://vk.com/id411894834"}
-];
-
-for (var i=0;i<paesi.length;i++) {
-    if (d==paesi[i]["text"]) {
-    condition=true;
-    titolo.innerHTML = "Обнаружен мошенник!";        
-    output.innerHTML = "<ul><li>Вы проверяли эту ссылку: "+c+"</li><li>Имя Фамилия: "+paesi[i]["namefemale"]+"</li><li>Описание/Коммент: "+paesi[i]["fact"]+"</li><li>Номер телефона: "+paesi[i]["number"]+"</li><li>Группа: "+paesi[i]["group"]+"</li><li>Вечная ссылка: "+paesi[i]["vechnaya"]+"</li></ul>";
-    titolo.style.color = "red";
-    li.style.color = "white";
-    titolo.style.fontsize = "25px";
-    titolo.style.border = "0px solid red";
-    titolo.style.borderRadius = "0px";
-    output.style.border = "0px solid red";
-    output.style.color = "black";
-    output.style.borderRadius = "0px";
-    }
-    else if (condition===false) {
-    titolo.innerHTML = "<q>"+c+"</q>В нашей базе нету данного человека.";
-    output.innerHTML = "P.s. Советуем навсякий проверять вечную ссылку.";
-    titolo.style.color = "black";
-    titolo.style.border = "0px solid white";
-    titolo.style.borderRadius = "0px";
-    output.style.color = "black";
-    output.style.border = "0px solid black";
-    output.style.borderRadius = "0px";
-    }
-    }
-    
-}
-
-
-
-
+]
